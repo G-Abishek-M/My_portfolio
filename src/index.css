@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Syne', 'Unbounded', sans-serif;
+  --font-serif: 'Instrument Serif', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Grotesk', ui-monospace, monospace;
+
+  --color-primary: #693bca;
+  --color-primary-container: #8257e5;
+  --color-primary-glow: rgba(130, 87, 229, 0.25);
+  
+  --color-ink: #1b192c;
+  --color-slate-muted: #58536e;
+  --color-canvas: #fcf8ff;
+  
+  --color-aurora-pink: #ffb3cb;
+  --color-aurora-coral: #ff5c79;
+  --color-aurora-lavender: #b9a5ff;
+  --color-aurora-sky: #80d8ff;
+  --color-aurora-cyan: #8ce8f2;
+  --color-aurora-mint: #99f6e4;
+}
+
+/* Custom Glass & Atmosphere utility classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px -5px rgba(27, 25, 44, 0.04), 0 1px 3px 0 rgba(27, 25, 44, 0.02);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 32px -4px rgba(25, 23, 42, 0.06), 0 2px 8px 0 rgba(130, 87, 229, 0.04);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(105, 59, 202, 0.09), 0 2px 10px 0 rgba(25, 23, 42, 0.03);
+  border-color: rgba(255, 255, 255, 0.98);
+}
+
+/* Subtle noise texture */
+.bg-noise {
+  background-image: radial-gradient(rgba(105, 59, 202, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Multi-color mesh gradient hero background */
+.hero-bg {
+  background:
+    radial-gradient(60% 50% at 10% 10%, #FBC8DC 0%, transparent 70%),
+    radial-gradient(55% 55% at 90% 15%, #D9C8FA 0%, transparent 70%),
+    radial-gradient(50% 45% at 45% 45%, #BDEBFA 0%, transparent 70%),
+    radial-gradient(60% 50% at 15% 85%, #FDD3E0 0%, transparent 70%),
+    radial-gradient(60% 50% at 85% 85%, #F9D6E6 0%, transparent 70%),
+    linear-gradient(to bottom, transparent 70%, #fcf8ff 100%);
+}
+
+/* Atmospheric aurora blob floating animation */
+@keyframes blob-float-1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(25px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.96); }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(-30px, 25px) scale(0.95); }
+  66% { transform: translate(20px, -20px) scale(1.06); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.85; }
+}
+
+.animate-blob-1 {
+  animation: blob-float-1 16s ease-in-out infinite;
+}
+
+.animate-blob-2 {
+  animation: blob-float-2 18s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fcf8ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbc3d6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a39bb3;
+}
+
+/* Hide default OS cursor when custom paint brush cursor is active */
+.custom-brush-cursor-active,
+.custom-brush-cursor-active * {
+  cursor: none !important;
+}
