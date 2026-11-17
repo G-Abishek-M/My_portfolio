@@ -10,7 +10,7 @@ I'm a passionate **B.Tech Artificial Intelligence and Data Science student** who
 
 Explore my personal portfolio to learn more about me, my technical skills, projects, and experience.
 
-🔗 **Live Portfolio:** [Add Your Portfolio URL Here]
+🔗 **Live Portfolio:** [https://g-abishek-m.github.io/My_portfolio/]
 
 ## 🛠️ Tech Stack
 
