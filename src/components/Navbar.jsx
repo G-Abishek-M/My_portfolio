@@ -81,10 +81,12 @@ export default function Navbar() {
             className="group flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-white/80 backdrop-blur-xl border border-white/90 shadow-[0_4px_20px_rgba(27,25,44,0.06)] hover:shadow-[0_10px_28px_rgba(105,59,202,0.18)] hover:border-[#693bca]/30 transition-all duration-300"
             aria-label="Abishek Portfolio Home"
           >
-            <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#693bca] via-[#8257e5] to-[#80d8ff] flex items-center justify-center text-white shadow-sm group-hover:rotate-6 group-hover:scale-105 transition-all duration-300">
-              <span className="font-['Playfair_Display',Georgia,serif] italic font-bold text-[15px] tracking-[-0.04em] leading-none select-none">
-                AK
-              </span>
+            <div className="w-9 h-9 rounded-full overflow-hidden bg-[#151828] ring-1 ring-[#693bca]/20 flex items-center justify-center shadow-sm group-hover:rotate-6 group-hover:scale-105 transition-all duration-300">
+              <img
+                src="/assets/aistudio/Celestial_AK_Brushstroke_Logo_1bf8fa1d.png"
+                alt="Abishek AK logo"
+                className="w-full h-full object-cover object-center scale-[1.38] select-none"
+              />
             </div>
             <div className="flex flex-col text-left pr-1">
               <span className="font-display font-bold text-sm text-[#19172a] tracking-tight group-hover:text-[#693bca] transition-colors duration-200">

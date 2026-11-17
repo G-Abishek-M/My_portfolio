@@ -69,7 +69,9 @@ export default function Contact() {
     const trimmedName = formData.name.trim();
     const trimmedEmail = formData.email.trim();
     const trimmedMessage = formData.message.trim();
-    const web3FormsKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    const web3FormsKey =
+      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
+      'fb726309-d53d-410d-9928-d8860942374a';
 
     try {
       let response;
@@ -454,7 +456,10 @@ export default function Contact() {
                       Thank you for reaching out, <span className="font-semibold text-[#19172a]">{formData.name}</span>. Your message has been sent to{' '}
                       <span className="font-mono text-[#693bca]">{contactData.email}</span>.
                     </p>
-                    {!import.meta.env.VITE_WEB3FORMS_ACCESS_KEY && (
+                    {!(
+                      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
+                      'fb726309-d53d-410d-9928-d8860942374a'
+                    ) && (
                       <p className="text-[11px] text-[#7a7485] max-w-md leading-relaxed mb-7">
                         First-time setup note: if this is the very first submission, check <span className="font-mono">{contactData.email}</span> (including Spam) once to click FormSubmit&apos;s activation link.
                       </p>

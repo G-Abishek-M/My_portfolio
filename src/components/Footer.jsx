@@ -35,9 +35,13 @@ export default function Footer() {
           >
             <motion.div
               whileHover={{ rotate: 12, scale: 1.1 }}
-              className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#693bca] to-[#80d8ff] flex items-center justify-center text-white font-bold text-base shadow-sm transition-transform"
+              className="w-10 h-10 rounded-full overflow-hidden bg-[#151828] ring-1 ring-[#693bca]/20 flex items-center justify-center shadow-sm transition-transform"
             >
-              A
+              <img
+                src="/assets/aistudio/Celestial_AK_Brushstroke_Logo_1bf8fa1d.png"
+                alt="Abishek AK logo"
+                className="w-full h-full object-cover object-center scale-[1.38] select-none"
+              />
             </motion.div>
             <div className="flex flex-col text-left">
               <span className="font-display font-bold text-lg text-[#19172a] tracking-tight group-hover:text-[#693bca] transition-colors">
