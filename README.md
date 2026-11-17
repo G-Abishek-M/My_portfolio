@@ -10,7 +10,7 @@ I'm a passionate **B.Tech Artificial Intelligence and Data Science student** who
 
 Explore my personal portfolio to learn more about me, my technical skills, projects, and experience.
 
-🔗 **Live Portfolio:** [https://g-abishek-m.github.io/My_portfolio/]
+🔗 **Live Portfolio:** [https://gm-abishek-portfolio.vercel.app/]
 
 ## 🛠️ Tech Stack
 
@@ -95,7 +95,7 @@ This portfolio represents my journey as a developer, showcasing my skills, creat
 
 - **LinkedIn:** https://www.linkedin.com/in/abishek-gm-521a25361
 - **GitHub:** github.com/G-Abishek-M
-- **Portfolio:** [Add Your Portfolio URL]
+- **Portfolio:** https://gm-abishek-portfolio.vercel.app/
 - **Email:** gmabishek2007@gmail.com 
 
 ---
